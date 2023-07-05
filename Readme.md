@@ -15,6 +15,8 @@ To complete this tasks we follows these steps:
 - we Use a autoscaling groups  ( or instance groups - name depends on a cloud) to provision backend VMs. Each backend is attached with to autoscaling group which have 1 instance  for the demo purposes - but configuration should allow to scale application to multiple AZs via 1 change in terraform configuration
 
 To check this tasks URL need to use are as follows:
+
+
 http://my-alb-1991683548.us-west-1.elb.amazonaws.com/page1/
 
 
