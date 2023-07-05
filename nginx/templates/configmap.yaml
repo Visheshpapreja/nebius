@@ -1,0 +1,19 @@
+# templates/configmap.yaml
+
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: {{ include "nginx.fullname" . }}-config
+data:
+  index.html: |
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <title>This is a customized index page</title>
+    </head>
+    <body>
+      <h1>Hello, World!</h1>
+      <p>This is a customized web page served by the Nginx container.</p>
+    </body>
+    </html>
+
